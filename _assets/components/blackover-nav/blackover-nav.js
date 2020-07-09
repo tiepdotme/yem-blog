@@ -7,6 +7,7 @@ const handleClickBlackoverNav = () => {
 			DOM.menu.classList.remove('active');
 			this.classList.remove('active');
 			DOM.body.classList.remove('active-side');
+			DOM.html.classList.remove('overflow-hidden');
 		});
 	}
 };

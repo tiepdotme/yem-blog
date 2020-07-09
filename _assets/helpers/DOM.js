@@ -5,4 +5,5 @@ export const DOM = {
 	body: document.querySelector('body'),
 	scrollTopButton: document.querySelector('.scroll-top'),
 	backPageButtonDark: document.querySelector('.back-page-button-dark'),
+	html: document.querySelector('html')
 };
