@@ -89,7 +89,6 @@ import { smoothScrollTo } from './helpers/smooth-scroll';
 	};
 })('docReady', window);
 
-
 // Reset animations on page: body.preload
 setTimeout(function () {
 	document.body.className = '';
@@ -105,31 +104,66 @@ document.addEventListener('keyup', function (event) {
 	}
 });
 
+function createSearchScript() {
+	const newScriptsearchLib = document.createElement('script');
+	const newsearchHandle = document.createElement('script');
+	newScriptsearchLib.id = 'search-lib';
+	newsearchHandle.id = 'search-handle';
+	newScriptsearchLib.src = '/assets/js/plugins/lunr.js';
+	newsearchHandle.src = '/assets/js/plugins/lunrsearchengine.js';
+	const firstScriptTag = document.getElementById('lazyloadScript');
+
+	firstScriptTag.parentNode.insertBefore(newScriptsearchLib, firstScriptTag);
+	firstScriptTag.parentNode.insertBefore(newsearchHandle, firstScriptTag);
+}
+
+function handleCreateSearchScript() {
+	document
+		.querySelector('.wrap-search i')
+		.addEventListener('click', function () {
+			const searchLib = document.getElementById('search-lib');
+			const searchHandle = document.getElementById('search-handle');
+			if (!searchLib && !searchHandle) {
+				createSearchScript();
+			}
+		});
+
+	document
+		.querySelector('.wrap-search input')
+		.addEventListener('keyup', function () {
+			const searchLib = document.getElementById('search-lib');
+			const searchHandle = document.getElementById('search-handle');
+			if (!searchLib && !searchHandle) {
+				createSearchScript();
+			}
+		});
+}
+
 // remove all :hover stylesheets on mobile
-function hasTouch() {
-	return (
-		'ontouchstart' in document.documentElement ||
-		navigator.maxTouchPoints > 0 ||
-		navigator.msMaxTouchPoints > 0
-	);
-}
+// function hasTouch() {
+// 	return (
+// 		'ontouchstart' in document.documentElement ||
+// 		navigator.maxTouchPoints > 0 ||
+// 		navigator.msMaxTouchPoints > 0
+// 	);
+// }
 
-if (hasTouch()) {
-	// try {
-	// 	for (var si in document.styleSheets) {
-	// 		var styleSheet = document.styleSheets[si];
-	// 		if (!styleSheet.rules) continue;
+// if (hasTouch()) {
+// 	try {
+// 		for (var si in document.styleSheets) {
+// 			var styleSheet = document.styleSheets[si];
+// 			if (!styleSheet.rules) continue;
 
-	// 		for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-	// 			if (!styleSheet.rules[ri].selectorText) continue;
+// 			for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+// 				if (!styleSheet.rules[ri].selectorText) continue;
 
-	// 			if (styleSheet.rules[ri].selectorText.match(':hover')) {
-	// 				styleSheet.deleteRule(ri);
-	// 			}
-	// 		}
-	// 	}
-	// } catch (ex) {}
-}
+// 				if (styleSheet.rules[ri].selectorText.match(':hover')) {
+// 					styleSheet.deleteRule(ri);
+// 				}
+// 			}
+// 		}
+// 	} catch (ex) {}
+// }
 
 docReady(function () {
 	//Check to see if the window is top if not then display button
@@ -158,6 +192,7 @@ docReady(function () {
 			smoothScrollTo(0);
 		});
 	}
+	handleCreateSearchScript();
 });
 
 class App {

@@ -6,8 +6,8 @@
 
 {% assign smallest = resized | sort: 'width' | first %}
 
-<figure class="image-container" style="max-width: {{original.width}}px;">
+<figure class="image-container">
 	<img width="100%" src="/{{ smallest.path }}" alt="{{ alt }}" data-srcset="{{ srcset | strip_newlines }}" class="blur-up lazyautosizes lazyload">
-<div style="padding-top: {{original.height | times:100 | divided_by:original.width}}%"></div>
+	<div style="padding-top: {{original.height | times:100 | divided_by:original.width}}%"></div>
 </figure>
 
