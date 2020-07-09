@@ -1,0 +1,15 @@
+.authorbox {
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	.author-description {
+		font-size: 16px;
+	}
+
+	.author-thumb {
+		width: 70px;
+		border-radius: 50%;
+		border: 2px solid darken($primary, 20%);
+		padding: 2px;
+	}
+}

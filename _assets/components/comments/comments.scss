@@ -1,0 +1,13 @@
+.comments {
+	margin-top: 30px;
+	margin-bottom: 60px;
+
+	#comments {
+		display: none;
+		margin-top: 60px;
+
+		&.comments--show {
+			display: block;
+		}
+	}
+}

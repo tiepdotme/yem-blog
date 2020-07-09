@@ -1,0 +1,9 @@
+.posttitle {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1.2;
+
+	@media (max-width: 768px) {
+		font-size: 35px;
+	}
+}

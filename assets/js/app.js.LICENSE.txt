@@ -1,0 +1,123 @@
+/* 0 */
+
+/* we need to scroll to the top of the window first, because the browser will always jump to the anchor first before JavaScript is ready, thanks Stack Overflow: http://stackoverflow.com/a/3659116 */
+
+/*#__PURE__*/
+
+/************************************************************************/
+
+/******/
+
+/***/
+
+// CONCATENATED MODULE: ./_assets/app.js
+
+// CONCATENATED MODULE: ./_assets/helpers/animation.js
+
+// CONCATENATED MODULE: ./_assets/helpers/smooth-scroll.js
+
+// Check if module is in cache
+
+// Create a new module (and put it into the cache)
+
+// Document ready
+
+// ESM COMPAT FLAG
+
+// Execute the module function
+
+// Flag the module as loaded
+
+// IE only safe when readyState is "complete", others safe when readyState is "interactive"
+
+// Load entry module and return exports
+
+// Object.prototype.hasOwnProperty.call
+
+// Reset animations on page: body.preload
+
+// Return the exports of the module
+
+// The module cache
+
+// The public function name defaults to window.docReady
+
+// The require function
+
+// This is the one public interface
+
+// __webpack_public_path__
+
+// add the function and context to the list
+
+// allow any closures held by these functions to free
+
+// and will schedule the callback to run right after
+
+// as an argument to the callback
+
+// backup is window load event
+
+// but you can modify the last line of this function to pass in a different object or method name
+
+// call this when the document is ready
+
+// create a fake namespace object
+
+// define __esModule on exports
+
+// define getter function for harmony exports
+
+// docReady(fn, context);
+
+// expose the module cache
+
+// expose the modules object (__webpack_modules__)
+
+// first choice is DOMContentLoaded event
+
+// getDefaultExport function for compatibility with non-harmony modules
+
+// if a callback here happens to add new ready handlers,
+
+// if document already ready to go, schedule the ready function to run
+
+// if ready has already fired, then just schedule the callback
+
+// if you want to put them in a different namespace and those will be used instead of
+
+// in order and no new ones will be added to the readyList
+
+// mode & 1: value is a module id, require it
+
+// mode & 2: merge all properties of value into the ns
+
+// mode & 4: return value when already ns object
+
+// mode & 8|1: behave like require
+
+// must be IE
+
+// otherwise if we don't have event handlers installed, install them
+
+// the context argument is optional - if present, it will be passed
+
+// the docReady() function will see that it already fired
+
+// this event loop finishes so all handlers will still execute
+
+// this function protects itself against being called more than once
+
+// this must be set to true before we start calling callbacks
+
+// to fire asynchronously, but right away
+
+// webpackBootstrap
+
+// while we are processing the list
+
+// window.docReady(...)
+
+//Check to see if the window is top if not then display button
+
+//Click event to scroll to top

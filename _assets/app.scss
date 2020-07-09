@@ -1,0 +1,113 @@
+@import './components/icons/icons.scss';
+@import '../node_modules/bootstrap/scss/_functions.scss';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+@import '../node_modules/bootstrap/scss/_mixins.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './components/starts/stars.scss';
+@import './styles/variables.scss';
+@import './styles/global.scss';
+
+@import './styles/animation.scss';
+
+// Menu
+@import './components/navbar-brand/navbar-brand.scss';
+@import './components/sidebar/sidebar.scss';
+@import './components/nav-icon/nav-icon.scss';
+@import './components/blackover-nav/blackover-nav.scss';
+@import './components/menu/menu.scss';
+
+// Blog grid
+@import './components/blog-grid/blog-grid.scss';
+
+// Pagination
+@import './components/pagination/pagination.scss';
+
+
+//newsletter
+@import './components/newsletter/newsletter.scss';
+
+// blog 
+@import './components/post-title/post-title.scss';
+@import './components/entry-featured-image/entry-featured-image.scss';
+@import './components/entry-header/entry-header.scss';
+@import './components/author-box/author-box.scss';
+@import './components/article-post/article-post.scss';
+@import './components/spoiler/spoiler.scss';
+@import './components/comments/comments.scss';
+@import './components/related-posts/related-posts.scss';
+
+// Share
+@import './components/share/share.scss';
+
+// Search
+@import './components/search/search.scss';
+
+// Footer
+@import './components/footer/footer.scss';
+
+// Image
+@import './components/responsive-image/responsive-image.scss';
+
+
+@media (min-width: 768px) {
+
+	.container,
+	.container-sm,
+	.container-md,
+	.container-lg {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.container,
+	.container-sm,
+	.container-md,
+	.container-lg {
+		max-width: 1140px;
+	}
+}
+
+.container {
+	@media (max-width: 1024px) {
+		width: 90%;
+		max-width: 90%;
+	}
+
+	@media (max-width: 600px) {
+		padding-left: 15px;
+	}
+}
+
+
+@media (max-width: 600px) {
+
+	.nav-icon,
+	.sidebar,
+	.share,
+	.wrap-search {
+		position: relative;
+	}
+
+	.site-content {
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.article-post,
+	.entry-header,
+	.comments,
+	.rating,
+	.authorbox {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	blockquote {
+		margin-left: 15px;
+		font-size: 18px;
+	}
+}

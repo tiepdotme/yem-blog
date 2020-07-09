@@ -1,0 +1,34 @@
+
+
+.image-container {
+	.no-js img.lazyload {
+		display: none;
+	}
+	
+	.blur-up {
+		filter: blur(10px);
+		transition: filter 400ms;
+	}
+	
+	.blur-up.lazyloaded {
+		filter: blur(0);
+	}
+	
+	.fade-in {
+		opacity: 0;
+		transition: opacity 400ms;
+	}
+	
+	.fade-in.lazyloaded {
+		opacity: 1;
+	}
+
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}

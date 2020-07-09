@@ -1,0 +1,52 @@
+.share {
+	position: fixed;
+	left: 15px;
+	bottom: 40%;
+	z-index: 1026;
+	text-align: center;
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			margin: 15px 0;
+		}
+
+		a {
+			color: $dark;
+		}
+	}
+
+	@media (max-width: 600px) {
+		display: flex;
+		align-items: center;
+
+		ul {
+			li {
+				display: inline-block;
+				margin: 10px 15px !important;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1025px) {
+		ul {
+			a {
+				&:hover {
+					&.ico-twitter {
+						color: #55acee;
+					}
+
+					&.ico-facebook {
+						color: #3b5999;
+					}
+
+					&.ico-linkedin {
+						color: #0077B5;
+					}
+				}
+			}
+		}
+	}
+}

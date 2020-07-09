@@ -1,0 +1,17 @@
+.blackover {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(8, 11, 16, 0);
+	z-index: -1;
+	animation: animate2 .3s;
+
+	&.active {
+		z-index: 4;
+		background: rgba(8, 11, 16, 0.7);
+		animation: animate .3s;
+	}
+}

@@ -1,0 +1,28 @@
+.pagination {
+	justify-content: center;
+
+	a {
+		background: rgba(0, 0, 0, 0.05);
+		color: #000;
+		cursor: pointer;
+
+		&:hover {
+			background: $primary;
+			text-decoration: none;
+		}
+	}
+
+	a,
+	span {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 40px;
+	}
+
+	span {
+		border: 0;
+	}
+}

@@ -1,0 +1,57 @@
+
+// animation
+.nav-icon,
+.hamburger-bar,
+.hamburger-bar:before,
+.hamburger-bar:after,
+#menu,
+body,
+a,
+a:hover,
+body.active-side,
+.site-content,
+.show-search,
+.show-search:hover,
+.title,
+.title:hover,
+.card,
+.card:hover,
+img,
+img:hover {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+@keyframes fade-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes fade-up {
+	0% {
+		opacity: 0;
+		transform: translateY(20%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+.featured-image,
+.firstpage .blog-grid-item:nth-child(1),
+.firstpage .blog-grid-item:nth-child(2),
+.firstpage .blog-grid-item:nth-child(3) {
+	animation: fade-up 0.7s ease-out forwards running;
+}
