@@ -14,22 +14,26 @@
 		font-size: 20px;
 		display: inline-block;
 		padding: 0 10px;
+	}
 
-		&:active {
-			&.footer__social-twitter {
-				color: #55acee;
-			}
+	@media screen and (max-width: 991px) {
+		&-link {
+			&:active {
+				&.footer__social-twitter {
+					color: #55acee;
+				}
 
-			&.footer__social-instagram {
-				color: #e4405f;
-			}
+				&.footer__social-instagram {
+					color: #e4405f;
+				}
 
-			&.footer__social-facebook {
-				color: #3b5999;
-			}
+				&.footer__social-facebook {
+					color: #3b5999;
+				}
 
-			&.footer__social-codepen {
-				color: #000000;
+				&.footer__social-codepen {
+					color: #000000;
+				}
 			}
 		}
 	}
