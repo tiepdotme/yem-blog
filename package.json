@@ -7,7 +7,8 @@
 		"start": "bundle exec jekyll serve",
 		"build": "gulp build --production && bundle exec jekyll build",
 		"gulp:dev": "gulp --development",
-		"gulp:build": "gulp build --production"
+		"gulp:build": "gulp build --production",
+		"deploy": "npx vercel --prod"
 	},
 	"repository": {
 		"type": "git",

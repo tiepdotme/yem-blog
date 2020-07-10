@@ -68,6 +68,7 @@ exclude:
     - Gemfile.lock
     - package-lock.json
     - node_modules
+    - gulpfile.js
 # Responsive images
 responsive_image:
   # [Required]
