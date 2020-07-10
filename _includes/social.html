@@ -1,0 +1,8 @@
+{% if site.social %}
+<ul class="footer__social">
+	{% for social in site.social %}
+	<li class="footer__social-item"><a href="{{ social['url'] }}" target="_blank" class="footer__social-link footer__social-{{ social['name'] }}"><i
+				class="fab fa-{{ social['name'] }}"></i></a></li>
+	{% endfor %}
+</ul>
+{% endif %}
