@@ -54,7 +54,7 @@ These dependency injection system has multiple advantages:
 
 > Noted: The Class dose not extend the dependency - `PhotosService`. It's gets the the dependency injected by Angular.
 
-We see that we were using special `providedIn` in `photos.service.ts`. We will talk about this `providedIn` in next artical.
+We see that we were using special `providedIn` in `photos.service.ts`. We will talk about this `providedIn` in [next artical](/Understanding-Providers-and-Injection-Tokens).
 
 Let's for a moment remove this `providedIn` and run our application to see what happends.
 
