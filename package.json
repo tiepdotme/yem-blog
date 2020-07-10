@@ -5,7 +5,7 @@
 	"main": "gulpfile.js",
 	"scripts": {
 		"start": "bundle exec jekyll serve",
-		"build": "gulp build --production && bundle exec jekyll build",
+		"build": "gulp build --production && bundle exec jekyll build && gulp html",
 		"gulp:dev": "gulp --development",
 		"gulp:build": "gulp build --production",
 		"deploy": "npx vercel --prod"
@@ -46,12 +46,14 @@
 		"gulp": "^4.0.2",
 		"gulp-gh-pages": "^0.5.4",
 		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-htmlmin": "^5.0.1",
 		"gulp-if": "^3.0.0",
 		"gulp-imagemin": "^7.1.0",
 		"gulp-load-plugins": "^2.0.3",
 		"gulp-notify": "^3.2.0",
 		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^8.0.0",
+		"gulp-purgecss": "^2.3.0",
 		"gulp-rename": "^2.0.0",
 		"gulp-sass": "^4.1.0",
 		"gulp-sourcemaps": "^2.6.5",

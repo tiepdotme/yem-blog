@@ -161,6 +161,12 @@ function scripts() {
 		.pipe(webpackstream(webpackConfig))
 		.pipe(gulp.dest('./assets/js/'));
 }
+function html() {
+	return gulp
+		.src('./_site/**/*.html')
+		.pipe($.htmlmin({ collapseWhitespace: true }))
+		.pipe(gulp.dest('./_site/'));
+}
 
 function images() {
 	return gulp
@@ -179,6 +185,17 @@ function watch() {
 	gulp.watch('./_assets/images/**/*.{jpg,jpeg,gif,svg,png}', images);
 }
 
+function purgeCSS() {
+	return gulp
+		.src('./assets/css/app.css')
+		.pipe(
+			$.purgecss({
+				content: ['./_site/index.html'],
+			})
+		)
+		.pipe(gulp.dest('build/css'));
+}
+
 const build = gulp.series(styles, scripts, images, watch);
 gulp.task('build', build);
 
@@ -188,3 +205,5 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.clean = clean;
 exports.deployPage = deployPage;
+exports.purgeCSS = purgeCSS;
+exports.html = html;
