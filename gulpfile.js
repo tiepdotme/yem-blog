@@ -206,4 +206,3 @@ exports.scripts = scripts;
 exports.clean = clean;
 exports.deployPage = deployPage;
 exports.purgeCSS = purgeCSS;
-exports.html = html;

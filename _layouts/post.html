@@ -14,7 +14,14 @@ post_class: post-template
 	<div class="d-flex align-items-center mt-4">
 		<div>
 			{% if author.avatar %}
-			<img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+			{% responsive_image_block %}
+				path: {{ author.avatar }}
+				alt: {{ author.display_name }}
+				{% if title %}
+					title: {{ author.display_name }}
+				{% endif %}
+			{% endresponsive_image_block %}
+			<!-- <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}"> -->
 			{% else %}
 			<img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x"
 				alt="{{ author.display_name }}">
