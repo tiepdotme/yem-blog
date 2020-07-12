@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Understanding Providers and Injection Tokens'
+title: 'Understanding Providers and Injection Tokens (Part 1)'
 author: Sang
 categories: [Angular]
 image: assets/images/07_2020/dependencies_injection_2.png
