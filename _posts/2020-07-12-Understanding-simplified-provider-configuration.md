@@ -31,7 +31,7 @@ How does ANgular know what dependency to inject without using `@Inject()` decora
 ```
 > The class name exsists at runtime under the form of a constructor function. On the other hand we would not be able to use an interface as a injection token because an interface does not exist at runtime, it's a compile time constructor only.
 
-Another thing that we don't need to do is to write our manual provide function. Because of the in Angular dependency injection system we use the `useClass` property instead of `useFactory` and the dependencies. We spectify the `useClass` by the name of the class in this case is `PhotosService`. Then Angular knows that he needs to call the new constructor on this class and it need to provide the dependency that are needed by the constructor.
+Another thing that we don't need to do is to write our manual provide function. Because of the in Angular dependency injection system we use the `useClass` property instead of `useFactory` and the dependencies(`deps: []`). We spectify the `useClass` by the name of the class in this case is `PhotosService`. Then Angular knows that he needs to call the new constructor on this class and it need to provide the dependency that are needed by the constructor.
 
 ```javascript
 ...
