@@ -21,11 +21,15 @@
 	@media (max-width: 600px) {
 		display: flex;
 		align-items: center;
-
+		left: 0;
+		p {
+			margin: 0;
+		}
 		ul {
+			margin: 0;
 			li {
 				display: inline-block;
-				margin: 10px 15px !important;
+				margin: 0 15px !important;
 			}
 		}
 	}

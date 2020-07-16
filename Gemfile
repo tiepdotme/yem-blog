@@ -23,4 +23,6 @@ group :jekyll_plugins do
     gem 'jekyll-minifier'
     gem "jekyll-assets"
     gem 'jekyll-responsive-image'
+    gem 'jekyll-codepen'
+    gem 'jemoji'
 end

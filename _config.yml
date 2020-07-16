@@ -143,3 +143,8 @@ responsive_image:
         - assets/foo/bar.png
         - assets/bgs/*.png
         - assets/avatars/*.{jpeg,jpg}
+codepen:
+    theme: 11473
+    height: 300
+    preview: false
+    default_tab: result
