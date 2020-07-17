@@ -31,7 +31,7 @@ We see four properties set up on the object which we passed to _@NgModule_:
     -   providers
     -   bootstrap
 
-**bootstrap** was responsible for telling Angular which component should be aware of at the point of the time the whole application start. Basically, in the _index.html_ which component would recognized and that was the app component.
+**bootstrap** is used to identify the root component of our application component tree. It was responsible for telling Angular which component should be aware of at the point of the time the whole application start. Basically, in the _index.html_ which component would recognized and that was the app component.
 
 > We don't add any more component selectors to the _index.html_. Therefore, we don't touch the bootstrap array.
 
