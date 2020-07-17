@@ -1,0 +1,40 @@
+---
+permalink: manifest.json
+---
+
+{
+	"name": "{{site.name}}",
+	"short_name": "{{site.short_name}}",
+	"theme_color": "{{site.theme_color}}",
+	"background_color": "{{site.background_color}}",
+	"display": "{{site.manifest_display}}",
+	"Scope": "{{site.manifest_Scope}}",
+	"start_url": "{{site.manifest_start_url}}",
+	"description": "{{site.description}}",
+	"orientation": "{{site.manifest_orientation}}",
+	"related_applications": {{site.manifest_related_applications}},
+	"prefer_related_applications": {{site.manifest_prefer_related_applications}},
+	"icons": [
+		{
+			"src": "/assets/images/icons/icon-72x72.png",
+			"sizes": "72x55",
+			"type": "image/png"
+		},
+		{
+			"src": "/assets/images/icons/icon-96x96.png",
+			"sizes": "96x73",
+			"type": "image/png"
+		},
+		{
+			"src": "/assets/images/icons/icon-128x128.png",
+			"sizes": "128x98",
+			"type": "image/png"
+		},
+		{
+			"src": "/assets/images/icons/icon-144x144.png",
+			"sizes": "144x110",
+			"type": "image/png"
+		}
+	],
+	"splash_pages": null
+}

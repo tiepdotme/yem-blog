@@ -139,6 +139,7 @@ function handleCreateSearchScript() {
 		});
 }
 
+
 // remove all :hover stylesheets on mobile
 // function hasTouch() {
 // 	return (

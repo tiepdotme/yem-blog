@@ -1,8 +1,17 @@
 name: Yem
+short_name: Yem
 title: Yem
 description: >-
     I will take you on the fabulous world of exploration. Travel, culture,
     lifestyle. Eat, Pray, Love and Coding!
+theme_color: '#2196f3'
+background_color: '#2196f3'
+manifest_display: 'fullscreen'
+manifest_Scope: '/'
+manifest_start_url: 'https://ngocsangyem.io/'
+manifest_orientation: 'natural'
+manifest_related_applications: '[]'
+manifest_prefer_related_applications: false
 logo: assets/images/logo.png
 favicon: assets/images/logo.png
 baseurl: ''
@@ -42,6 +51,7 @@ plugins:
     - jekyll-archives
     - jekyll-figure
     - jekyll-minifier
+    # - jekyll-pwa-plugin
 jekyll-archives:
     enabled:
         - categories
@@ -80,6 +90,7 @@ exclude:
     - package-lock.json
     - node_modules
     - gulpfile.js
+
 # Responsive images
 responsive_image:
     # [Required]
@@ -148,3 +159,19 @@ codepen:
     height: 300
     preview: false
     default_tab: result
+pwa:
+    enabled: true # Optional
+    sw_src_filepath: service-worker.js # Optional
+    sw_dest_filename: service-worker.js # Optional
+    dest_js_directory: assets/js/plugins # Required
+    precache_recent_posts_num: 15 # Optional
+    precache_glob_directory: / # Optional
+    precache_glob_patterns: # Optional
+        - '{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}'
+        - index.html
+        - 'assets/css/**/*.css'
+        - 'assets/js/**/*.js'
+        - 'assets/fonts/**/*.woff2'
+    precache_glob_ignores: # Optional
+        - sw-register.js
+        - 'fonts/**/*'

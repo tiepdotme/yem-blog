@@ -25,4 +25,5 @@ group :jekyll_plugins do
     gem 'jekyll-responsive-image'
     gem 'jekyll-codepen'
     gem 'jemoji'
+    gem 'jekyll-pwa-plugin'
 end

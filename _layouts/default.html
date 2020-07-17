@@ -4,10 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
-
-	<!-- <title>{{ page.title }} | {{site.name}}</title> -->
+	<link rel="manifest" href="/manifest.json" />
+	<link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl | prepend: site.url }}" />
 
 	{% seo %}
 	<link rel="preload" as="font" href="/assets/fonts/SenRegular_1.woff2" type="font/woff2" crossorigin>
