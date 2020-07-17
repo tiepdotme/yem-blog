@@ -30,5 +30,3 @@ workbox.routing.registerRoute(
     /^https?:\/\/cdn.staticfile.org/,
     workbox.strategies.staleWhileRevalidate()
 );
-
-console.log(workbox);
