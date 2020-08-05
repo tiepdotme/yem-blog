@@ -59,3 +59,5 @@ So instead of constructing all of your classes yourself, you ask the container f
 The best part of it is that the container can resolve complex dependencies transparently and if you want to swap out a generic dependency. You only need to update the container. Cleaner and mor modular code.
 
 {% responsive_image path: assets/images/08_2020/dependency_10.png alt: 'Model dependency%}
+
+author: [Anthony Ferrara](https://www.youtube.com/watch?v=IKD2-MAkXyQ)
