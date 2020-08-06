@@ -2,7 +2,7 @@
 layout: post
 title: 'Box-sizing reset'
 author: Sang
-categories: [Css, 30 seconds of knowledge]
+categories: [CSS, 30 seconds of knowledge]
 image: assets/images/07_2020/box-sizing.jpg
 rating: false
 comments: false
