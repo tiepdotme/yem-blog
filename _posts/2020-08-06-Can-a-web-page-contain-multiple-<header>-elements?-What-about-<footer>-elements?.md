@@ -15,3 +15,5 @@ W3 recommends having as many as you want, but only 1 of each for each "section" 
 ##### Additional links
 
 [StackOverflow - Using header or footer tag twice](https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice?)
+
+source: [30 seconds of knowledge](https://30secondsofknowledge.com/)
